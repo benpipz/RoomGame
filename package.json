@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://benpipz.github.io/SkiRoomChooser",
+  "homepage": "https://benpipz.github.io/RoomGame",
   "main": "./src/main.jsx",
   "scripts": {
     "dev": "vite",
