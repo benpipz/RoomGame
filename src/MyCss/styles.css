@@ -1,0 +1,119 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  background-color: purple;
+  position: sticky;
+  top: 0;
+  max-height: 30px;
+}
+
+button {
+  width: fit-content;
+  background-color: #541554;
+}
+
+.images {
+  display: flex;
+  justify-content: space-evenly;
+  align-self: baseline;
+  flex-wrap: wrap;
+}
+
+.sidebar {
+  background-color: #bdbdbd;
+  color: black;
+}
+
+.buttomBar {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+  background-color: #541554;
+}
+
+img {
+  max-width: 300px;
+  max-height: 300px;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    max-width: 30vh;
+    max-height: 30vh;
+  }
+}
+
+.app {
+  min-height: 98.5vh;
+  background-color: #f4ede4;
+}
+
+.navbar2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #541554;
+  color: white;
+}
+
+h1 {
+  width: 50%; /* Set the width of the h1 element to 50% */
+  text-align: center;
+}
+
+h2 {
+  width: 90%; /* Set the width of the h1 element to 50% */
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.lesarcs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.card {
+  border: 1px solid grey;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 250px;
+  display: inline-block;
+}
+
+.card .card-image {
+  max-width: 60%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card .card-title {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #e76f51;
+}
+
+.card .card-text {
+  font-family: Arial, sans-serif;
+  color: #541554;
+}

@@ -1,0 +1,88 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+# Node.js
+node_modules/
+
+# Build output
+/dist/
+/.vite/
+
+# Cache
+.cache/
+node_modules/.cache/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor files
+.vscode/
+.idea/
+
+# Optional: Dependency directories (React specific)
+# If you are using Yarn, you can add:
+# /yarn-error.log
+
+# Optional: TypeScript-specific
+# /tsconfig.tsbuildinfo
+
+# Optional: PnP (Plug'n'Play) project dependency management.
+# /pnp.js
+
+# Optional: Next.js
+# .next/
+
+# Optional: Gatsby
+# .cache/
+# public/static/
+# .htaccess
+# cache-loader/
+
+# Optional: Flutter
+# .dart_tool/
+# .flutter-plugins
+# .flutter-plugins-dependencies
+# /build/
+
+# Optional: Electron output directory
+# /out/
+
+# Optional: Tye
+# .deploy/
+
+# Optional: Jest
+# /coverage/
+
