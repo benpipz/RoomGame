@@ -101,10 +101,10 @@ h2 {
 }
 
 .card .card-image {
-  max-width: 60%;
+  max-width: 40px;
   height: auto;
   border-radius: 50%;
-  margin-bottom: 10px;
+  margin: 0px;
 }
 
 .card .card-title {
@@ -116,4 +116,42 @@ h2 {
 .card .card-text {
   font-family: Arial, sans-serif;
   color: #541554;
+}
+
+iframe {
+  width: 825px;
+  height: 464px;
+  @media screen and (max-width: 1000px) {
+    width: calc(84vw);
+    height: calc(65vw);
+  }
+}
+
+.notification-box {
+  padding: 10px;
+  margin: 10px;
+  background-color: #e76f51;
+  color: #fff;
+  border-radius: 5px;
+  transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.notification-box.hidden {
+  opacity: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.notification-box.visible {
+  opacity: 1;
+}
+
+.div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }

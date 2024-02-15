@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import companyLogo from "../../images/companyLogo.jpg";
 import MyLinkButton from "../Utils/MyButton";
-import CountdownTimer from "../GraphConent/Content/CountdownTimer";
+import CountdownTimer from "./CountdownTimer";
 const Navbar = () => {
   const onLogoClick = () => {
     window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";

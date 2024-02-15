@@ -1,16 +1,25 @@
 import React, { useEffect, useState } from "react";
 
-const Card = ({ img, title, data, weather, temp, snowchances, total }) => {
-  debugger;
+const Card = ({ img, title, data }) => {
+  const [mydata, setMydata] = useState();
+
+  useEffect(() => {
+    setMydata(
+      Object.entries(data).map(([key, value]) => {
+        let newKey = key.replace(/_/g, " ");
+        return (
+          <h2 key={key}>
+            <strong>{newKey}:</strong> {value}
+          </h2>
+        );
+      })
+    );
+  }, [data]);
   return (
     <div className="card">
-      <img className="card-image" src={img}></img>
       <h2 className="card-title">{title}</h2>
-      {/* <div>{data && mydata}</div> */}
-      <h2>{weather && "Weather:   " + weather}</h2>
-      <h2>{temp && "Temperture:  " + temp + "\u00b0C"}</h2>
-      <h2>{total != null ? "Snowed today:  " + snowchances + "cm" : ""}</h2>
-      <h2>{snowchances != null ? "Snow chance:  " + snowchances + "%" : ""}</h2>
+      <img src={img}></img>
+      {mydata && mydata}
     </div>
   );
 };
