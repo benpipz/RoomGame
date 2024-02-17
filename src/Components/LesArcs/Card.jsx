@@ -12,7 +12,7 @@ const Card = ({ img, title, data }) => {
             <strong>{newKey}:</strong> {value}
           </h2>
         );
-      })
+      }),
     );
   }, [data]);
   return (

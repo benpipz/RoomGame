@@ -5,12 +5,14 @@
   "type": "module",
   "homepage": "https://benpipz.github.io/RoomGame",
   "scripts": {
-    "dev": "vite",
     "build": "vite build",
+    "deploy": "gh-pages -d build",
+    "dev": "vite",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "prettier:check": "prettier . --check",
+    "prettier:format": "prettier . --write",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",
@@ -41,6 +43,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "gh-pages": "^6.1.1",
+    "prettier": "^3.2.5",
     "vite": "^5.1.0"
   }
 }
