@@ -4,16 +4,20 @@
 		{
 			"type": "npm",
 			"script": "prettier:check",
-			"problemMatcher": [],
-			"label": "npm: prettier:check",
-			"detail": "prettier . --check"
+			"label": "Prettier check",
+			"detail": "npm prettier:check"
 		},
 		{
 			"type": "npm",
 			"script": "prettier:format",
-			"problemMatcher": [],
-			"label": "npm: prettier:format",
-			"detail": "prettier . --write"
+			"label": "Prettier format",
+			"detail": "npm prettier:format"
+		},
+		{
+			"type": "npm",
+			"script": "lint",
+			"label": "lint",
+			"detail": "npm lint"
 		}
 	]
 }
