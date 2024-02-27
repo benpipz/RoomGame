@@ -31,6 +31,7 @@ const CoupleImages = ({ leader, points, click }) => {
     <div className="images">
       {leader.map((element, key) => (
         <CoupleCard
+        key={key}
           images={imagesGroup[key]}
           leader={element}
           points={points[key]}

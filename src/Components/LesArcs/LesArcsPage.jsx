@@ -1,7 +1,5 @@
 import Picture from "./Picture";
 import Card from "./Card";
-import pic from "../../images/companyLogo2.jpg";
-import axios from "axios";
 import { useState, useEffect } from "react";
 import { GetForecast } from "./lesArcsService";
 import LivestreamEmbed from "./LesarcsStream";

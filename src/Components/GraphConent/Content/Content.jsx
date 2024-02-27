@@ -71,8 +71,8 @@ const Content = () => {
               borderRadius: "10%",
             }}
           />
-          {katilex.map((e) => (
-            <img
+          {katilex.map((e,id) => (
+            <img key={id}
               src={katilexImage}
               style={{
                 borderRadius: "10%",
