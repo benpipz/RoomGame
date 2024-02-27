@@ -9,7 +9,7 @@ const Picture = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://restcountries.com/v3.1/name/france"
+          "https://restcountries.com/v3.1/name/france",
         );
         setData(response.data);
       } catch (error) {

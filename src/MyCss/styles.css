@@ -133,7 +133,9 @@ iframe {
   background-color: #e76f51;
   color: #fff;
   border-radius: 5px;
-  transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition:
+    height 0.5s ease-in-out,
+    opacity 0.5s ease-in-out;
   display: flex;
   justify-content: center;
   font-family: "Roboto", sans-serif;
