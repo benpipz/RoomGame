@@ -1,22 +1,21 @@
 import React, { useEffect, useState } from "react";
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Tooltip,
-} from "chart.js";
+import { registerChart, labels, options } from "./BarChartLogic";
 import { Bar } from "react-chartjs-2";
+import PropTypes from "prop-types";
 
-const labels = ["Benalice", "Tanyum", "Sparlissa"];
+registerChart();
 
-const BarChart = ({ mydata }) => {
-  const data = {
+BarChart.propTypes = {
+  data: PropTypes.object,
+};
+
+const BarChart = ({ data }) => {
+  const localdata = {
     labels,
     datasets: [
       {
         label: "",
-        data: mydata,
+        data,
         backgroundColor: "#541554",
         barThickness: 30,
         borderWidth: 1,
@@ -25,29 +24,18 @@ const BarChart = ({ mydata }) => {
     ],
   };
 
-  const [chartData, setChartData] = useState(data);
-  ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip);
-
-  const options = {
-    plugins: {
-      legend: {
-        position: "left",
-      },
-    },
-  };
+  const [chartData, setChartData] = useState(localdata);
 
   useEffect(() => {
-    setChartData(data);
-  }, [mydata]);
+    setChartData(localdata);
+  }, [data]);
 
   return (
-    <>
-      <Bar
-        options={options}
-        data={chartData}
-        style={{ maxHeight: "300px", width: "auto" }}
-      />
-    </>
+    <Bar
+      options={options}
+      data={chartData}
+      style={{ maxHeight: "300px", width: "auto" }}
+    />
   );
 };
 

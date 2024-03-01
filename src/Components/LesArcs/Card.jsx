@@ -12,13 +12,13 @@ const Card = ({ img, title, data }) => {
             <strong>{newKey}:</strong> {value}
           </h2>
         );
-      }),
+      })
     );
   }, [data]);
   return (
     <div className="card">
       <h2 className="card-title">{title}</h2>
-      <img src={img}></img>
+      <img src={img} />
       {mydata && mydata}
     </div>
   );
