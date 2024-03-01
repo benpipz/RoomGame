@@ -1,4 +1,3 @@
-import BarChart from "../BarChart";
 import UpperButtons from "../UpperButtons";
 import { useDispatch, useSelector } from "react-redux";
 import { updateGraphLeader, updateGraphData } from "../../Store/KatialexSlice";
@@ -7,6 +6,7 @@ import CoupleImages from "../CoupleImages";
 import katilexImage from "../../../images/katilex.jpeg";
 import { useEffect, useState } from "react";
 import PoppingMessage from "./PoppingMessage";
+import BarChart from "../Barchart";
 
 const initialData = [0, 0, 0];
 const initialLeader = [false, false, false];
@@ -71,8 +71,9 @@ const Content = () => {
               borderRadius: "10%",
             }}
           />
-          {katilex.map((_,index) => (
-            <img key={index}
+          {katilex.map((_, index) => (
+            <img
+              key={index}
               src={katilexImage}
               style={{
                 borderRadius: "10%",
