@@ -5,10 +5,6 @@ import PropTypes from "prop-types";
 
 registerChart();
 
-BarChart.propTypes = {
-  data: PropTypes.object,
-};
-
 const BarChart = ({ data }) => {
   const localdata = {
     labels,
@@ -37,6 +33,10 @@ const BarChart = ({ data }) => {
       style={{ maxHeight: "300px", width: "auto" }}
     />
   );
+};
+
+BarChart.propTypes = {
+  data: PropTypes.object,
 };
 
 export default BarChart;

@@ -82,7 +82,7 @@ const Content = () => {
           ))}
         </div>
       )}
-      <BarChart mydata={state.data} leader={state.leader} />
+      <BarChart data={state.data} leader={state.leader} />
       <CoupleImages
         leader={state.leader}
         points={state.data}
